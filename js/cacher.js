@@ -16,9 +16,10 @@ function onestla(element1, element2){
 
 }
 
-function ramener(element1){
-    let element = document.getElementById(element1);
-    
+function bouger(element1){
+    let div = document.getElementById(element1);
+    element1.style.top = "10vh";
+    element1.
 }
 
 onestla("about", "texteabout");
@@ -30,3 +31,5 @@ onestla("contact", "textecontact");
 
 onestla("linkedin", "textelinkedin");
 onestla("twitter", "textetwitter");
+
+bouger("uwu");
