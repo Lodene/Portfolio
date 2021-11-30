@@ -17,7 +17,7 @@ body {
 
 .un {
     display: flex;
-    position: absolute;
+    position: relative;
     min-height: 100vh;
 }
 
@@ -99,7 +99,7 @@ body {
     position: absolute;
     top: -2vh;
     left: 7vw;
-    opacity: 0;
+    opacity: 1;
     color: black;
     display: flex;
     justify-content: center;
@@ -129,20 +129,50 @@ body {
     border: 2px solid rgb(59, 57, 57);
 }
 
-#textetwitter {
-    height: 8vh;
-}
-
 
 .ehbibi img {
     max-width: 70%;
     max-height: 70vh;
 }
 
-#uwu {
-    position: absolute;
-    top: 100vh;
+
+.page {
+    /*transform: translateY(100vh);*/
+    min-height: 80vh;
+    width: 90%;
     color: white;
-    transition: 2s;
+    
+}
+.page.showed {
+    /*transform: translateY(0vh);*/
+    z-index: 10;
+    position: absolute;
+    top: 10vh;
+    left: 7%;
+    min-height: 80vh;
+    background-color: rgb(36, 35, 35);
+    border: 5px solid rgb(49, 48, 48);
+    border-radius: 10%;
 }
 
+#contenue_page_about {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 55vh;
+}
+
+#image_page_about, #texte_page_about {
+    width: 40%;
+    text-align: center;
+}
+
+#img_profil_page_aout {
+    width: 200px;
+    border-radius: 50%;
+}
+
+.fleche_page { 
+    width: 50px;
+    margin: 25px 0 0 35px;
+}
