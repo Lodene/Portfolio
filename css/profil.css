@@ -12,7 +12,6 @@ body {
     flex-direction: column;
     min-width: 100%;
     min-height: 100vh;
-    background-color: rgb(36, 35, 35);
 }
 
 .un {
@@ -29,6 +28,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    background-color: rgb(36, 35, 35);
 }
 
 .letout div{
@@ -47,6 +47,7 @@ body {
     width: 95%;
     display: flex;
     justify-content: center;
+    background-color: rgb(37, 37, 37);
 }
 
 .ehbibagauche {
@@ -145,12 +146,12 @@ body {
 }
 .page.showed {
     /*transform: translateY(0vh);*/
-    z-index: 10;
+    transition-duration: 1s, 2s;
     position: absolute;
     top: 10vh;
     left: 7%;
     min-height: 80vh;
-    background-color: rgb(36, 35, 35);
+    background-color: rgb(43, 42, 42);
     border: 5px solid rgb(49, 48, 48);
     border-radius: 10%;
 }
