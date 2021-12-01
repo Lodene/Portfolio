@@ -1,17 +1,14 @@
-.page_skills_bar {
-    width: 100%;
-    background-color: #ddd;
-}
-
-.interieur_skills_bar {
-    text-align: right;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    color: white;
-}
-
-.couleur_UML{
-    background-color: red;
+.skillBar {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 200px;
+    height: 100px;
+    min-height: 20px;
+    margin-left: 5px;
+    margin-left: auto;
+    margin-right: 10px;
+    border-radius: 20px;
+    border: solid 1px #2c3133;
 }
 
 #page_skills_contenaire {
