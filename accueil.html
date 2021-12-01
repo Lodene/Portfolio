@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Accueil</title>
+	<link rel="stylesheet" type="text/css" href="../css/accueil.css">
+	<link rel="stylesheet" type="text/css" href="../css/header.css">
+
+
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ 
+</head>
+<body>
+	<?php
+		include("repetition/header.php");
+	?>
+	<main>
+		<div>
+			<img src="../img/definitifjaune.jpg" id="definitif">
+		</div>
+		<div class="main">
+			
+			<div class="liens" data-aos="fade-up">
+				<div class="premierel">
+					<img src="../img/carte.jpg" id="carte">
+				</div>
+				<div class="deuxiemel">
+					<h2 > Obtenez votre carte et profitez de toutes les réductions quelle vous apporte ! </h2>
+				</div>
+				<script>
+					
+			</script>
+			</div>
+		</div> 
+		<div class="bas">
+			<div class="troisieme">
+				<h3 data-aos="fade-right">Devenez partenaire</h3>
+				<h3 data-aos="flip-left">Les offres</h3>
+				<h3 data-aos="fade-left"><a href="php/contact.html ">Contact</a></h3>
+			</div>
+			<div class="bar"> <div class="bar2" data-aos="flip-up"></div></div>
+			<div class="deuxieme">
+				<div class="background">
+					<div class="text">
+						<div class="ligneun">
+							<h2 data-aos="flip-left"> F.A.Q </h2>
+						</div>
+						<div class="question">
+							<a id="toggleButton1" onclick="toggleText(1);" href="javascript:void(0);">
+								<p data-aos="fade-right">En combien de temps vais-je recevoir ma carte ? </p>
+							</a>
+							<p id="textArea1" data-aos="fade-up"></p>
+							<script src="../js/toggleText.js"></script>
+						</div>
+						<div class="question">
+							<a id="toggleButton2" onclick="toggleText(2);" href="javascript:void(0);">
+								<p data-aos="fade-left">Combien coûte la carte ... ?</p>
+							</a>
+							<p id="textArea2" data-aos="fade-up"></p>
+							<script src="../js/toggleText.js"></script>
+						</div>
+						<div class="question">
+							<a id="toggleButton3" onclick="toggleText(3);" href="javascript:void(0);">
+								<p data-aos="fade-left">Comment ça marche ?</p>
+							</a>
+							<p id="textArea3" data-aos="fade-up"></p>
+							<script src="../js/toggleText.js"></script>
+						</div>
+						<div class="question">
+							<a id="toggleButton4" onclick="toggleText(4);" href="javascript:void(0);">
+								<p data-aos="fade-right">Quel est l'age limite pour profiter des avantages de la carte ?</p>
+							</a>
+							<p id="textArea4" data-aos="fade-up"></p>
+							<script src="../js/toggleText.js"></script>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="bar"> <div class="bar2" data-aos="flip-up"></div></div>
+			<div class="quatrieme">
+				<div class="quatriemeborder" data-aos="flip-up">
+					<div class="association" data-aos="flip-left">
+						<div class="gaucheq">
+							<div class="titreq">
+								<h3> Finance ton association </h3>
+							</div>
+							<div class="textq">
+								<p> tu es une association ? Demande à devenir partenaire .... et tu recevra une commission à chaque fois qu'une personne passe par ton lien ! </p>
+							</div>
+						</div>
+						<div class="droiteq">
+							<a href="contact.php?objet=partenaire_asso" class="liencontact">Devenir partenaire associative </a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="cinquieme">
+				<div class="quatriemeborder" data-aos="flip-down">
+					<div class="association" data-aos="zoom-in">
+						<div class="droiteq">
+							<a href="contact.php?objet=partenaire" class="liencontact">Deviens partenaire</a>
+						</div>
+						<div class="gaucheq">
+							<div class="titreq">
+								<h3> Gagne de la pub  </h3>
+							</div>
+							<div class="textq">
+								<p> Tu es une entreprise ? Tu penses pouvoir proposer une réduction à des étudiants ? N'hesite pas à nous contacter  </p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="bar"> <div class="bar2" data-aos="flip-up"></div></div>
+			<div class="dernier">
+				<div class="fin">
+					<h4 data-aos="zoom-out-right"> Contact </h4>
+					<h4 data-aos="zoom-out-down"> Mention Légales </h4>
+					<h4 data-aos="zoom-out-left"> CGV </h4>
+				</div>
+			</div>
+		</div>
+	</main>
+	<!--<header>
+		<h3> Contact </h3>
+		<h3> Mention légal </h3>
+		<h3> CGV </h3>
+	</header>-->
+	<script>AOS.init();</script>
+</body>
+</html>
+
