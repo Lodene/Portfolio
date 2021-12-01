@@ -17,6 +17,7 @@ function onestla(element1, element2){
 
 }
 
+//Affichage Fenetre
 function verification(val, element){
     let fenetre = document.getElementById(element);
     if (val == 1){
@@ -29,10 +30,26 @@ function verification(val, element){
         }
     } else if (val == 2) {
         fenetre.classList.remove("showed");
+        fenetre.classList.add("ciao");
+        console.log(fenetre)
         verif --;
     }
     sauvegarde = fenetre;
 }
+
+// SkillBar
+skillBars = document.querySelectorAll(".skillBar");
+skillBars.forEach((skillBar) => {
+    
+    let percentage = skillBar.dataset.percentage;
+    skillBar.style.background =
+        "linear-gradient(90deg, rgb(245 223 77) 0%, rgb(245 223 77) " +
+        percentage +
+        "%, rgb(35 38 38) " +
+        percentage +
+        "%, rgb(35 38 38) 100%)";
+});
+
 
 
 onestla("about", "texteabout");

@@ -142,14 +142,17 @@ body {
 
 
 .page {
-    /*transform: translateY(100vh);*/
+    transform: translateY(100vh);
+    transition-duration: 1s, 2s;
     min-height: 80vh;
     width: 90%;
     color: white;
-    
+    position: absolute;
+    top: 10vh;
+    left: 7%;
 }
 .page.showed {
-    /*transform: translateY(0vh);*/
+    transform: translateY(0vh);
     transition-duration: 1s, 2s;
     position: absolute;
     top: 10vh;
@@ -159,7 +162,6 @@ body {
     border: 5px solid rgb(49, 48, 48);
     border-radius: 10%;
 }
-
 #contenue_page_about {
     display: flex;
     justify-content: space-around;
