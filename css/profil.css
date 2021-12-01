@@ -4,7 +4,6 @@
 * {
     margin: 0;
     padding: 0;
-    overflow: hidden;
 }
 
 body {
@@ -20,9 +19,6 @@ body {
     min-height: 100vh;
 }
 
-.pageprincipal {
-    overflow: hidden;
-}
 .ehbibi {
     width: 5%;
     display: flex;
@@ -85,7 +81,6 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    
 }
 
 .ehbibadroite h1{
@@ -106,12 +101,13 @@ body {
     justify-content: center;
     align-items: center;
     transition-duration: 0.2s;
-    overflow: auto;
     width: 120px; 
     height: 80px; 
     -moz-border-radius: 10px; 
     -webkit-border-radius: 10px; 
     border-radius: 10px;
+    opacity: 0;
+    z-index: 0;
  }
  .texteh3:before {
     content:"";
@@ -122,9 +118,12 @@ body {
     border-bottom: 13px solid transparent;
     margin: 0 0 0 -25px;
  }
+
+ .letout img:hover{
+     z-index: 10;
+ }
  
 .texteh3 h3{
-    overflow: visible;
     color: rgb(129, 122, 122);
     padding: 10px;
     border: 2px solid rgb(59, 57, 57);
@@ -142,7 +141,7 @@ body {
 
 
 .page {
-    transform: translateY(100vh);
+    transform: translateY(150vh);
     transition-duration: 1s, 2s;
     min-height: 80vh;
     width: 90%;
@@ -152,6 +151,7 @@ body {
     left: 7%;
 }
 .page.showed {
+    display: block;
     transform: translateY(0vh);
     transition-duration: 1s, 2s;
     position: absolute;
@@ -160,7 +160,7 @@ body {
     min-height: 80vh;
     background-color: rgb(43, 42, 42);
     border: 5px solid rgb(49, 48, 48);
-    border-radius: 10%;
+    border-radius: 50px;
 }
 #contenue_page_about {
     display: flex;

@@ -2,17 +2,17 @@
 let verif = 0;
 
 function onestla(element1, element2){
-    let elabout = document.getElementById(element1);
-    let eltexteabout = document.getElementById(element2);
-    
-    elabout.addEventListener("mouseover", function( event ) {
-        eltexteabout.style.opacity= "75%";
-        elabout.style.opacity = "80%";
+    let first = document.getElementById(element1);
+    let two = document.getElementById(element2);
+    console.log('uwu');
+    first.addEventListener("mouseover", function( event ) {
+        two.style.opacity= "75%";
+        first.style.opacity = "80%";
     });
 
-    elabout.addEventListener("mouseleave", function( event ) {
-        eltexteabout.style.opacity= "0%";
-        elabout.style.opacity = "100%";
+    first.addEventListener("mouseleave", function( event ) {
+        two.style.opacity= "0%";
+        first.style.opacity = "100%";
     });
 
 }
