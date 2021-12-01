@@ -136,6 +136,10 @@ body {
     max-height: 70vh;
 }
 
+.ehbibi img:hover{
+    cursor: pointer; 
+}
+
 
 .page {
     /*transform: translateY(100vh);*/
