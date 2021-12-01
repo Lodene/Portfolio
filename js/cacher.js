@@ -4,8 +4,7 @@ let verif = 0;
 function onestla(element1, element2){
     let elabout = document.getElementById(element1);
     let eltexteabout = document.getElementById(element2);
-    element1.onclick = bouger;
-
+    
     elabout.addEventListener("mouseover", function( event ) {
         eltexteabout.style.opacity= "75%";
         elabout.style.opacity = "80%";

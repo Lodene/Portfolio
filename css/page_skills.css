@@ -1,31 +1,42 @@
-.skillBar {
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    width: 100px;
-    height: 100px;
-    min-height: 20px;
-    margin-left: 5px;
-    margin-left: auto;
-    margin-right: 10px;
-    border-radius: 20px;
-    border: solid 1px #2c3133;
+.page_skills_bar {
+    width: 100%;
+    background-color: #ddd;
+}
+
+.interieur_skills_bar {
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+.couleur_UML{
+    background-color: red;
 }
 
 #page_skills_contenaire {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     border: 2px solid black;
     width: 100%;
     height: 70vh;
 }
 
-.conteneur {
+.conteneur, .conteneur_deux {
     min-width: 35%;
-    border: 2px solid blue;
+}
+
+.conteneur_deux {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 60vh;
 }
 
 .page_skills_block_texte {
     display: flex;
+    justify-content: center;
     border: 2px solid orange;
 }
 
@@ -38,7 +49,7 @@
 }
 
 .page_skills {
-    width: 80%;
+    width: 100%;
     text-align: center;
     border: 2px solid black;
 }
