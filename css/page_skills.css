@@ -48,9 +48,18 @@
 .page_skills {
     width: 100%;
     text-align: center;
-    border: 2px solid black;
+    font-size: 30px;
 }
 
-.page_skills.titre {
-    color: black;
+#page_skills_droite_bas > .titre {
+    padding-bottom: 30px;
 }
+
+#page_skills_droite_haut {
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: 2px solid darkcyan;
+}
+
