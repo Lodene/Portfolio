@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alex Brush">
 
     <link rel="stylesheet" type="text/css" href="../css/profil.css">
+    <link rel="stylesheet" type="text/css" href="../css/profil_background.css">
     <link rel="stylesheet" type="text/css" href="../css/page_skills.css">
 
     
@@ -22,7 +23,7 @@
             <div class="ehbibi">
                 <div class="haut">
                     <div class="letout">
-                        <div><img src="../img/about.png" alt="about" id="about" onclick="verification(1, 'page_about')" ></div>
+                        <div><img src="../img/about_jaune.png" alt="about" id="about" onclick="verification(1, 'page_about')" ></div>
                         <div class="texteh3" id="texteabout"><h3>About</h3></div>
                     </div>
                     <div class="letout">
@@ -39,19 +40,19 @@
 
                 <div class="milieu">
                     <div class="letout">
-                        <div><a href="#"><img src="../img/cv.png" alt="cv" id="cv" onclick="verification(1, 'page_cv')"></a></div>
+                        <div><a href="#"><img src="../img/cv_jaune.png" alt="cv" id="cv" onclick="verification(1, 'page_cv')"></a></div>
                         <div class="texteh3" id="textecv"><h3>CV</h3></div>
                     </div>
                     <div class="letout">
-                        <div><img src="../img/contact.png" alt="contact" id="contact" onclick="verification(1, 'page_contact')"></div>
+                        <div><img src="../img/contact_jaune.png" alt="contact" id="contact" onclick="verification(1, 'page_contact')"></div>
                         <div class="texteh3" id="textecontact"><h3>Contact</h3></div>
                     </div>
                 </div>
 
                 <div class="bas">
                     <div class="letout">
-                        <div><img src="../img/#.png" alt="reseaux" id="reseaux" onclick="verification(1, 'page_reseaux')"></div>
-                        <div class="texteh3" id="textereseaux"><h3>Linkedin</h3></div>
+                        <div><img src="../img/network.png" alt="reseaux" id="reseaux" onclick="verification(1, 'page_reseaux')"></div>
+                        <div class="texteh3" id="textereseaux"><h3>Réseaux</h3></div>
                     </div>
                 </div>
             </div>
@@ -83,57 +84,77 @@
         </section>
         <section id="page_skills" class="page">
             <img src="../img/fleche.png" class="fleche_page" onclick="verification(2, 'page_skills')">
-            <div id="page_skills_contenaire">
-                <div class="conteneur">
-                    <div id="page_skills_gauche">
-                        <div class="page_skills titre"><h4>Compétence informatique</h4></div>
-                        <div class="page_skills_block_texte">
-                            <div class="page_skills_texte"><p>Html / css</p></div>
-                            <div class="page_skills_bar"><p><span data-percentage='85' class='skillBar'></span></p></div>
-                        </div>
-                        <div class="page_skills_block_texte">
-                            <div class="page_skills_texte"><p>SQL</p></div>
-                            <div class="page_skills_bar"><p><span data-percentage='70' class='skillBar'></span></p></div>
-                        </div>
-                        <div class="page_skills_block_texte">
-                            <div class="page_skills_texte"><p>Php</p></div>
-                            <div class="page_skills_bar"><p><span data-percentage='60' class='skillBar'></span></p></div>
-                        </div>
-                        <div class="page_skills_block_texte">
-                            <div class="page_skills_texte"><p>Java</p></div>
-                            <div class="page_skills_bar"><p><span data-percentage='15' class='skillBar'></span></p></div>
-                        </div>
-                        <div class="page_skills_block_texte">
-                            <div class="page_skills_texte"><p>Python</p></div>
-                            <div class="page_skills_bar"><p><span data-percentage='40' class='skillBar'></span></p></div>
-                        </div>
-                        <div class="page_skills_block_texte">
-                            <div class="page_skills_texte"><p>JavaScript</p></div>
-                            <div class="page_skills_bar"><p><span data-percentage='15' class='skillBar'></span></p></div>
-                        </div>
+            <div class="contenaire_page_skills">
+                <div class="page_skills_Box">
+                    <div class="skillsBoxesTitre">
+                        <h1> Skills</h1>
                     </div>
-                </div>
-                <div class="conteneur_deux">
-                    <div id="page_skills_droite_haut">
-                        <div class="page_skills titre"><h4>Méthode</h4></div>
-                        <div class="page_skills_block_texte">
-                            <div class="page_skills_texte"><p>UML</p></div>
-                            <div class="page_skills_bar"><p><span data-percentage='90' class='skillBar'></span></p></div>
+                    <div class="skillsBoxes">
+                        <div class='skillBox gauche'>
+                            <p class='title'>Compétences informatiques</p>
+                            <div class='infos'>
+                                <div class="infobox">
+                                    <div><p>Html / css</p></div>
+                                    <div><p><span data-percentage='85' class='skillBar'></span></p></div>
+                                </div>
+                                <div class="infobox">
+                                    <div><p>Mysql</p></div>
+                                    <div><p><span data-percentage='80' class='skillBar'></span></p></div>
+                                </div>
+                                <div class="infobox">
+                                    <div><p>PL/SQL</p></div>
+                                    <div><p><span data-percentage='70' class='skillBar'></p></div>
+                                </div>
+                                <div class="infobox">
+                                    <div><p>Php</p></div>
+                                    <div><p><span data-percentage='60' class='skillBar'></p></div>
+                                </div>
+                                <div class="infobox">
+                                    <div><p>Python</p></div>
+                                    <div><p><span data-percentage='40' class='skillBar'></p></div>
+                                </div>
+                                <div class="infobox">
+                                    <div><p>JavaScript</p></div>
+                                    <div><p><span data-percentage='40' class='skillBar'></p></div>
+                                </div>
+                                <div class="infobox">
+                                    <div><p>Unix</p></div>
+                                    <div><p><span data-percentage='40' class='skillBar'></p></div>
+                                </div>
+                                <div class="infobox">
+                                    <div><p>Java</p></div>
+                                    <div><p><span data-percentage='30' class='skillBar'></p></div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="page_skills_block_texte">
-                            <div class="page_skills_texte"><p>MDD</p></div>
-                            <div class="page_skills_bar"><p><span data-percentage='70' class='skillBar'></span></p></div>
-                        </div>
-                        <div class="page_skills_block_texte">
-                            <div class="page_skills_texte"><p>GPI</p></div>
-                            <div class="page_skills_bar"><p><span data-percentage='80' class='skillBar'></span></p></div>
-                        </div>
-                    </div>
-                    <div id="page_skills_droite_bas">
-                        <div class="page_skills titre"><h4>Langue</h4></div>
-                        <div class="page_skills_block_texte">
-                            <div class="page_skills_texte"><p>Anglais</p></div>
-                            <div class="page_skills_bar"><p><span data-percentage='70' class='skillBar'></span></p></div>
+                        <div class="skillBox droite">
+                            <div class='skillBox'>
+                                <p class='title'>Méthode</p>
+                                <div class='infos'>
+                                    <div class="infobox">
+                                        <div><p>UML</p></div>
+                                        <div><p><span data-percentage='85' class='skillBar'></span></p>
+                                        </div>
+                                    </div>
+                                    <div class="infobox">
+                                        <div><p>MDD</p></div>
+                                        <div><p><span data-percentage='85' class='skillBar'></span></p></div>
+                                    </div>
+                                    <div class="infobox">
+                                        <div><p>GPI</p></div>
+                                        <div><p><span data-percentage='90' class='skillBar'></span></p></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='skillBox'>
+                                <p class='title'>Langue</p>
+                                <div class='infos'>
+                                    <div class="infobox">
+                                        <div><p>Anglais</p></div>
+                                        <div><p><span data-percentage='50' class='skillBar'></span></p></div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -155,12 +176,17 @@
             <img src="../img/fleche.png" class="fleche_page" onclick="verification(2, 'page_reseaux')">
             
         </section>
+        <section id="responsive">
+            <div>
+                <p> Le responsive est en construction </p>
+            </div>
+        </section>
     </section>
     
     
     
     
-    <script src="../js/cacher.js"></script>
+    <script src="../js/main.js"></script>
 </body>
 
 

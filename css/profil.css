@@ -1,17 +1,24 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Alconica&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Actor&display=swap');
+
+
+:root {
+    --yellow : rgb(245 223 77);
+}
 
 * {
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    font-family: 'Actor', sans-serif;
 }
 
 body {
     display: flex;
     flex-direction: column;
-    min-width: 100%;
-    min-height: 100vh;
+    max-width: 100%;
+    max-height: 100vh;
+    overflow: hidden;
 }
 
 .un {
@@ -20,19 +27,16 @@ body {
     min-height: 100vh;
 }
 
-.pageprincipal {
-    overflow: hidden;
-}
 .ehbibi {
-    width: 5%;
+    width: 7%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     background-color: rgb(36, 35, 35);
 }
 
 .letout div{
-    padding: 10px 0px 10px 0px;
+    padding: 20px 0px 20px 0px;
     color: rgb(56, 54, 54);
     text-align: center;
     width: 100%;
@@ -47,7 +51,6 @@ body {
     width: 95%;
     display: flex;
     justify-content: center;
-    background-color: rgb(37, 37, 37);
 }
 
 .ehbibagauche {
@@ -62,11 +65,15 @@ body {
     width: 55%;
     color: white;
     font-family: "Arhitects Daughther", sans-serif;
+    font-size: 50px;
 }
 
 .ehbibagauche h6 {
     font-size: 15px;;
-    
+}
+
+.ehbibagauche h1:nth-child(2) {
+    color: var(--yellow);
 }
 
 .ehbibagauche a {
@@ -85,7 +92,6 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    
 }
 
 .ehbibadroite h1{
@@ -94,6 +100,7 @@ body {
     font-size: 400px;
     font-family: "Alex Brush", sans-serif;
     margin-right: 20%;;
+    color: var(--yellow);
 }
 
 .texteh3 {
@@ -106,12 +113,13 @@ body {
     justify-content: center;
     align-items: center;
     transition-duration: 0.2s;
-    overflow: auto;
     width: 120px; 
     height: 80px; 
     -moz-border-radius: 10px; 
     -webkit-border-radius: 10px; 
     border-radius: 10px;
+    opacity: 0;
+    z-index: 0;
  }
  .texteh3:before {
     content:"";
@@ -122,9 +130,12 @@ body {
     border-bottom: 13px solid transparent;
     margin: 0 0 0 -25px;
  }
+
+ .letout img:hover{
+     z-index: 10;
+ }
  
 .texteh3 h3{
-    overflow: visible;
     color: rgb(129, 122, 122);
     padding: 10px;
     border: 2px solid rgb(59, 57, 57);
@@ -132,8 +143,12 @@ body {
 
 
 .ehbibi img {
-    max-width: 70%;
-    max-height: 70vh;
+    max-width: 40%;
+    max-height: 40vh;
+}
+
+.ehbibi .letout > div > img {
+    padding: 0px 5px 0px 5px;
 }
 
 .ehbibi img:hover{
@@ -142,14 +157,18 @@ body {
 
 
 .page {
-    /*transform: translateY(100vh);*/
+    transform: translateX(150%);
+    transition-duration: 1s, 2s;
     min-height: 80vh;
     width: 90%;
     color: white;
-    
+    position: absolute;
+    top: 10vh;
+    left: 7%;
 }
 .page.showed {
-    /*transform: translateY(0vh);*/
+    display: block;
+    transform: translateX(0vh);
     transition-duration: 1s, 2s;
     position: absolute;
     top: 10vh;
@@ -157,9 +176,8 @@ body {
     min-height: 80vh;
     background-color: rgb(43, 42, 42);
     border: 5px solid rgb(49, 48, 48);
-    border-radius: 10%;
+    border-radius: 50px;
 }
-
 #contenue_page_about {
     display: flex;
     justify-content: space-around;
@@ -181,3 +199,26 @@ body {
     width: 50px;
     margin: 25px 0 0 35px;
 }
+/*
+
+@media (max-width: 1230px) {
+    #responsive {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translateY(0vh);
+        transition-duration: 1s, 2s;
+        position: absolute;
+        top: 0vh;
+        left: 0%;
+        min-height: 100vh;
+        min-width: 100%;
+        background-color: rgb(43, 42, 42);
+        border: 5px solid rgb(49, 48, 48);
+    }    
+
+    #responsive p {
+        font-size: 50px;
+        color: white;
+    }
+}*/
