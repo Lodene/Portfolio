@@ -1,0 +1,51 @@
+#image_page_about {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+}
+
+#img_profil_page_aout {
+    width: 200px;
+    border-radius: 50%;
+}
+
+#contenue_page_about > .texte_page_about, #image_page_about {
+    text-align: center;
+}
+
+#image_page_aboutt {
+    display: flex;
+    justify-content: center;
+}
+
+.texte_page_about:nth-child(1) {
+    width: 30%;
+}
+.texte_page_about:nth-child(3) {
+    display: block;
+    width: 20%;
+}
+
+#contenue_page_about {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    height: 65vh;
+}
+
+.ptexte{
+    text-align: left;
+    font-size: 20px;
+}
+
+.hobbies {
+    display: flex;
+    justify-content: center;
+}
+
+#contenue_page_about h3 {
+    color: var(--yellow);
+    padding: 0px 0px 25px 0px;
+    font-size: 35px;
+}

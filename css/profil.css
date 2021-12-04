@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Alconica&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Actor&display=swap');
 
 
@@ -98,7 +98,7 @@ body {
     width: 100%;
     height: auto;
     font-size: 400px;
-    font-family: "Alex Brush", sans-serif;
+    font-family: "Arizonia", sans-serif;
     margin-right: 20%;;
     color: var(--yellow);
 }
@@ -177,22 +177,6 @@ body {
     background-color: rgb(43, 42, 42);
     border: 5px solid rgb(49, 48, 48);
     border-radius: 50px;
-}
-#contenue_page_about {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    min-height: 55vh;
-}
-
-#image_page_about, #texte_page_about {
-    width: 40%;
-    text-align: center;
-}
-
-#img_profil_page_aout {
-    width: 200px;
-    border-radius: 50%;
 }
 
 .fleche_page { 
