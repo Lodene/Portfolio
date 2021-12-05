@@ -1,6 +1,7 @@
 
 let verif = 0;
-let i = 2
+let i = 2;
+let j = 2;
 
 function onestla(element1, element2){
     let first = document.getElementById(element1);
@@ -26,19 +27,71 @@ function verification(val, element){
         if (verif == 0){
             verif ++;
             fenetre.classList.add("showed");
+            j = i;
+            while (i != j){
+                i = Math.floor(Math.random() * 2);
+            }
             switch (i) {
                 case 0:
-                    fenetre.style.transform = "translateY(0vh)";
+                    j = i;
+                    while (i != j){
+                        i = Math.floor(Math.random() * 1);
+                    }
+                    switch (i) {
+                        case 0:
+                            fenetre.style.transform = "translateX(150%)";
+                            fenetre.style.transform = "translateY(0vh)";
+                            fenetre.style.transform = "translateX(0%)";
+                            break;
+                        case 1:
+                            fenetre.style.transform = "translateX(150%)";
+                            fenetre.style.transform = "translateY(-150vh)";
+                            fenetre.style.transform = "translateX(0%)";
+                            fenetre.style.transform = "translateY(0vh)";
+                            break;
+                        }
                     break;
                 case 1:
-                    fenetre.style.transform = "translateX(0%)";
+                    j = i;
+                    while (i != j){
+                        i = Math.floor(Math.random() * 1);
+                    }
+                    switch (i) {
+                        case 0:
+                            fenetre.style.transform = "translateY(150vh)";
+                            fenetre.style.transform = "translateX(0%)";
+                            fenetre.style.transform = "translateY(0vh)";
+                            break;
+                        case 1:
+                            fenetre.style.transform = "translateY(-150vh)";
+                            fenetre.style.transform = "translateX(0%)";
+                            fenetre.style.transform = "translateY(0vh)";
+                            break;
+                        }
                     break;
                 case 2:
-                    fenetre.style.transform = "translateY(0vh)";
+                    j = i;
+                    while (i != j){
+                        i = Math.floor(Math.random() * 1);
+                    }
+                    switch (i) {
+                        case 0:
+                            fenetre.style.transform = "translateX(150%)";
+                            fenetre.style.transform = "translateY(0vh)";
+                            fenetre.style.transform = "translateX(0%)";
+                            break;
+                        case 1:
+                            fenetre.style.transform = "translateX(150%)";
+                            fenetre.style.transform = "translateY(150vh)";
+                            fenetre.style.transform = "translateX(0%)";
+                            fenetre.style.transform = "translateY(0vh)";
+                            break;
+                    }
                     break;
+                break;
             }
         } else {
-            fenetre.classList.remove("showed");
+            sauvegarde.classList.remove("showed");
             i = Math.floor(Math.random() * 2);
             switch (i) {
                 case 0:
@@ -51,12 +104,29 @@ function verification(val, element){
                     sauvegarde.style.transform = "translateY(-150vh)";
                     break;
             }
-            verif --;
-            verification(1, fenetre);
+            j = i;
+            while (i != j){
+                i = Math.floor(Math.random() * 2);
+            }
+            fenetre.classList.add("showed");
+            switch (i) {
+                case 0:
+                    fenetre.style.transform = "translateY(0vh)";
+                    break;
+                case 1:
+                    fenetre.style.transform = "translateX(0%)";
+                    break;
+                case 2:
+                    fenetre.style.transform = "translateY(0vh)";
+                    break;
+            }
         }
     } else if (val == 2) {
         fenetre.classList.remove("showed");
-        i = Math.floor(Math.random() * 2);
+        j = i;
+        while (i != j){
+            i = Math.floor(Math.random() * 2);
+        }
         switch (i) {
             case 0:
                 fenetre.style.transform = "translateY(150vh)";

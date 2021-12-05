@@ -165,6 +165,8 @@ body {
     position: absolute;
     top: 10vh;
     left: 7%;
+    background-color: rgb(43, 42, 42);
+    border: 5px solid rgb(49, 48, 48);
 }
 .page.showed {
     display: block;
@@ -173,8 +175,6 @@ body {
     top: 10vh;
     left: 7%;
     min-height: 80vh;
-    background-color: rgb(43, 42, 42);
-    border: 5px solid rgb(49, 48, 48);
     border-radius: 50px;
 }
 
