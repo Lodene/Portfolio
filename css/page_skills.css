@@ -47,7 +47,6 @@
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    padding: 10px;
     border-radius: 2px;
     width: 500px;
     height: fit-content;
@@ -78,10 +77,5 @@
     display: inline-flex;
     width: 100%;
     flex-flow: wrap;
-}
-
-.skillsBoxes {
-    display: flex;
-    justify-content: space-around;
 }
 
