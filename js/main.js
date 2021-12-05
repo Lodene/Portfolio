@@ -1,10 +1,10 @@
 
 let verif = 0;
+let i = 2
 
 function onestla(element1, element2){
     let first = document.getElementById(element1);
     let two = document.getElementById(element2);
-    console.log('uwu');
     first.addEventListener("mouseover", function( event ) {
         two.style.opacity= "75%";
         two.style.zIndex = "99";
@@ -26,13 +26,49 @@ function verification(val, element){
         if (verif == 0){
             verif ++;
             fenetre.classList.add("showed");
+            switch (i) {
+                case 0:
+                    fenetre.style.transform = "translateY(0vh)";
+                    break;
+                case 1:
+                    fenetre.style.transform = "translateX(0%)";
+                    break;
+                case 2:
+                    fenetre.style.transform = "translateY(0vh)";
+                    break;
+            }
         } else {
-            sauvegarde.classList.remove("showed");
-            fenetre.classList.add("showed"); 
+            fenetre.classList.remove("showed");
+            i = Math.floor(Math.random() * 2);
+            switch (i) {
+                case 0:
+                    sauvegarde.style.transform = "translateY(150vh)";
+                    break;
+                case 1:
+                    sauvegarde.style.transform = "translateX(150%)";
+                    break
+                case 2:
+                    sauvegarde.style.transform = "translateY(-150vh)";
+                    break;
+            }
+            verif --;
+            verification(1, fenetre);
         }
     } else if (val == 2) {
         fenetre.classList.remove("showed");
-        fenetre.classList.add("ciao");
+        i = Math.floor(Math.random() * 2);
+        switch (i) {
+            case 0:
+                fenetre.style.transform = "translateY(150vh)";
+                break;
+            case 1:
+                fenetre.style.transform = "translateX(150%)";
+                break
+            case 2:
+                fenetre.style.transform = "translateY(-150vh)";
+                break;
+        }
+        sauvegarde = fenetre;
         console.log(fenetre)
         verif --;
     }
@@ -42,14 +78,13 @@ function verification(val, element){
 // SkillBar
 skillBars = document.querySelectorAll(".skillBar");
 skillBars.forEach((skillBar) => {
-    
-    let percentage = skillBar.dataset.percentage;
-    skillBar.style.background =
-        "linear-gradient(90deg, rgb(245 223 77) 0%, rgb(245 223 77) " +
-        percentage +
-        "%, rgb(35 38 38) " +
-        percentage +
-        "%, rgb(35 38 38) 100%)";
+let percentage = skillBar.dataset.percentage;
+skillBar.style.background =
+    "linear-gradient(90deg, rgb(245 223 77) 0%, rgb(245 223 77) " +
+    percentage +
+    "%, rgb(35 38 38) " +
+    percentage +
+    "%, rgb(35 38 38) 100%)";
 });
 
 

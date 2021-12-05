@@ -168,7 +168,6 @@ body {
 }
 .page.showed {
     display: block;
-    transform: translateX(0vh);
     transition-duration: 1s, 2s;
     position: absolute;
     top: 10vh;
