@@ -1,0 +1,19 @@
+.contenaire_page_contact {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-around;
+    border: 2px solid yellow;
+    align-items: center;
+}
+
+.ligneUnContenairePageContact {
+    display: flex;
+    border: 2px solid black;
+    justify-content: space-around;
+    width: 80%;
+}
+
+.ligneUnContenairePageContact input {
+    width: 100%;
+}

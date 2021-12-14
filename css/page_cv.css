@@ -1,0 +1,46 @@
+#page_cv {
+    display: flex;
+    flex-direction: column;
+}
+
+.contenaire_page_cv {
+    display: flex;
+    height: 70vh;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contenaire_page_cv > h1 > span {
+    color: var(--yellow);
+}
+
+.contenaire_page_cv > h2 {
+    font-size: 35px;
+}
+
+.contenaire_cv {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 20vh;   
+}
+
+.titre_page_cv {
+    width: auto;
+}
+
+.contenaire_cv > div > a {
+    font-size: 25px;
+    text-decoration: none;
+    border: 2px solid var(--yellow);
+    border-radius: 2em;
+    padding: 10px;
+}
+
+.contenaire_cv > div > p {
+    font-size: 25px;
+}
+

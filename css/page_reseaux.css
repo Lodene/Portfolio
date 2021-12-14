@@ -1,0 +1,18 @@
+.fab {
+    font-size: 250px;
+    color: var(--yellow);
+}
+
+.contenairePageReseau {
+    display: flex;
+    justify-content: space-around;
+}
+
+#page_reseaux > div {
+    text-align: center;
+}
+
+#page_reseaux > div > h1 {
+    width: auto;
+    padding-bottom: 50px;
+}

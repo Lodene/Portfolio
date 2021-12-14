@@ -1,0 +1,9 @@
+#page_experience {}
+.contenaire_page_experience {
+    display: flex;
+    justify-content: center;
+}
+
+.titre_page_xp {
+    width: auto;
+}

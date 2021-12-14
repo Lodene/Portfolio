@@ -15,6 +15,10 @@
     <link rel="stylesheet" type="text/css" href="css/about.css">
     <link rel="stylesheet" type="text/css" href="css/profil_background.css">
     <link rel="stylesheet" type="text/css" href="css/page_skills.css">
+    <link rel="stylesheet" type="text/css" href="css/page_cv.css">
+    <link rel="stylesheet" type="text/css" href="css/page_experience.css">
+    <link rel="stylesheet" type="text/css" href="css/page_reseaux.css">
+    <link rel="stylesheet" type="text/css" href="css/page_contact.css">
 
     
     
@@ -44,11 +48,11 @@
 
                 <div class="milieu">
                     <div class="letout">
-                        <div><a href="#"><img src="img/cv_jaune.png" alt="cv" id="cv" onclick="verification(1, 'page_cv')"></a></div>
+                        <div><a href="#"><img src="img/cv.png" alt="cv" id="cv" onclick="verification(1, 'page_cv')"></a></div>
                         <div class="texteh3" id="textecv"><h3>CV</h3></div>
                     </div>
                     <div class="letout">
-                        <div><img src="img/contact_jaune.png" alt="contact" id="contact" onclick="verification(1, 'page_contact')"></div>
+                        <div><img src="img/contact.png" alt="contact" id="contact" onclick="verification(1, 'page_contact')"></div>
                         <div class="texteh3" id="textecontact"><h3>Contact</h3></div>
                     </div>
                 </div>
@@ -79,7 +83,7 @@
             <img src="img/fleche.png" class="fleche_page" onclick="verification(2, 'page_about')">
             <div>
                 <div class="Titre_page">
-                    <h1> About </h1>
+                    <h1 class="pt"> About </h1>
                 </div>
                 <div id="contenue_page_about">
                    <div class="texte_page_about">
@@ -129,7 +133,7 @@
             <div class="contenaire_page_skills">
                 <div class="page_skills_Box">
                     <div class="Titre_page">
-                        <h1> Skills</h1>
+                        <h1 class="pt"> Skills</h1>
                     </div>
                     <div class="skillsBoxes">
                         <div class='skillBox gauche'>
@@ -204,18 +208,66 @@
         </section>
         <section id="page_experience" class="page">
             <img src="img/fleche.png" class="fleche_page" onclick="verification(2, 'page_experience')">
+            <div class="contenaire_page_experience">
+                <h1 class="titre_page_xp pt">Expérience</h1>
+                <div class="contenaire_experience">
+
+                </div>
+            </div>
             
         </section>
-        <section id="page_cv" class="page">
+        <section id="page_cv" class="page cv">
             <img src="img/fleche.png" class="fleche_page" onclick="verification(2, 'page_cv')">
+            <div class="contenaire_page_cv">
+                <h1 class="titre_page_cv pt">My <span>Resume</span></h1>
+                <div class="contenaire_cv">
+                    <div>
+                        <p>You can download my resume juste here </p>
+                    </div>
+                    <div>
+                        <a href="../img/CV_STAGE_ANTOINE_ADJAMIDIS.pdf">Download my resume</a>
+                    </div>                   
+                </div>
+            </div>
             
         </section>
         <section id="page_contact" class="page">
             <img src="img/fleche.png" class="fleche_page" onclick="verification(2, 'page_contact')">
-            
+            <div>
+                <h1><span>Contact</span></h1>
+                <div class="contenaire_page_contact">
+                    <div class="ligneUnContenairePageContact">
+                        <div>
+                            <input type="text" id="nom" name="name" placeholder="Name" required>
+                        </div>
+                        <div>
+                            <input type="text" id="name" name="name" placeholder="Object" required>
+                        </div>
+                    </div>
+                    <div>
+                        <textarea id="message" name="message" placeholder="Text"></textarea>
+                    </div>
+                </div>
+            </div>
         </section>
         <section id="page_reseaux" class="page">
             <img src="img/fleche.png" class="fleche_page" onclick="verification(2, 'page_reseaux')">
+            <div>
+                <h1 class="pt">Réseaux</h1>
+                <div class="contenairePageReseau">
+                    <div class="contenaire_img">
+                        <a href="https://github.com/lodene">
+                            <i class="fab fa-github" id="githubimg"></i>
+                        </a>
+                    </div>
+                    <div class="contenaire_img">
+                        <a href="https://www.linkedin.com/in/antoine-adjamidis-aa8a781b8/">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
             
         </section>
         <section id="responsive">
